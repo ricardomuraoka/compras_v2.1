@@ -57,7 +57,7 @@ public class Produto {
         return Arrays.asList(
                 new Produto(1, "CANECA", 19.00),
                 new Produto(2, "COPO", 12.00),
-                new Produto(3, "CHAVEIRO COLECIONÁVEL", 2.00),
+                new Produto(3, "CHAVEIRO COLECIONAVEL", 2.00),
                 new Produto(4, "GROWLEY STANLEY", 450.00),
                 new Produto(5, "GROWLEY TABAJARA", 30.00),
                 new Produto(6, "TACA", 25.00),

@@ -40,7 +40,7 @@ public class MenuInicial {
         if (!Objects.equals(usuario.getClass(), Admin.class)) {
             System.out.println("1 - DIGITE 1 - FAZER COMPRAS. ");
         }
-        System.out.println("2 - DIGITE 2 - TROCAR USUÁRIO. ");
+        System.out.println("2 - DIGITE 2 - TROCAR USUARIO. ");
         System.out.println("3 - DIGITE 3 - SOBRE. ");
         System.out.println("4 - DIGITE 4 - SAIR. ");
         if (Objects.equals(usuario.getClass(), Admin.class)) {

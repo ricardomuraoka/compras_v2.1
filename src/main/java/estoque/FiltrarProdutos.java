@@ -17,13 +17,5 @@ public class FiltrarProdutos {
                 .toList();
     }
 
-    public void listaProdutosFiltrados(Estoque est, String produto) {
-        var estoqueFiltrado = est.getItensEstoque()
-                .entrySet()
-                .stream()
-                .filter(prod -> prod.getKey().getNome().contains(produto))
-                .toList();
-
-    }
 }
 

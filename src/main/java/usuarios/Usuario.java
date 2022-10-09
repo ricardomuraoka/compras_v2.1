@@ -7,7 +7,7 @@ import java.util.List;
 
 
 /**
- * Classe usuário
+ * Classe usuario
  */
 public abstract class Usuario {
     private List<Usuario> usuarios = new ArrayList<>();

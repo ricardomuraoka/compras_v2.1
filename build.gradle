@@ -18,6 +18,25 @@ test {
     useJUnitPlatform()
 }
 
-task {
+task clienteReport{
+    println("Ordene o relatório de clientes do que mais comprou para o que menos comprou. A ordenação pode ser feita " +
+            "pela média ou pelo valor total da compra.")
+}
 
+task stockModule {
+    println("Adicione um módulo para gerenciar os produtos do estoque")
+}
+
+task productTxt {
+    println("Carregue uma listagem de produtos pré-cadastrada de um arquivo de textos")
+}
+
+task DataPersistency {
+    println("Salve os dados em arquivos de texto, de modo que o sistema não perca nada quando for fechado")
+}
+
+compileJava.options.encoding = 'Windows-1252'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'Windows-1252'
 }
