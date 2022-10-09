@@ -117,8 +117,8 @@ public class CarrinhoDeCompras {
         if (produtosNoCarrinho.size() == 0) {
             carrinho = String.format("%nCliente: %s Valor Total: R$%.2f%nCarrinho Vazio", clienteCarrinho, totalCompras);
         } else {
-            carrinho = new StringBuilder().append(String.format("%nCliente: %sValor Total: R$%.2f%nCarrinho: ", clienteCarrinho, totalCompras))
-                    .append(produtosNoCarrinho()).toString();
+            carrinho = String.format("%nCliente: %sValor Total: R$%.2f%nCarrinho: ", clienteCarrinho, totalCompras) +
+                    produtosNoCarrinho();
         }
         return carrinho;
     }

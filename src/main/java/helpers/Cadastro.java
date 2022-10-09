@@ -43,8 +43,8 @@ public class Cadastro {
     public void desejaCadastrar(Estoque est, Historico hist, List<Cliente> clientes) throws InterruptedException {
         System.out.println("Deseja realizar seu cadastro? ");
         Scanner in = new Scanner(System.in);
-        System.out.println("1 - SIM");
-        System.out.println("2 - NÃO");
+        System.out.println("1 — SIM");
+        System.out.println("2 — NÃO");
         int option = Integer.parseInt(in.nextLine());
         if (option == 1) new Cadastro().cadastraCliente(est, hist, clientes);
         else if (option == 2) System.exit(0);
@@ -59,14 +59,14 @@ public class Cadastro {
         inscrição de onze dígitos decimais com a seguinte configuração: ABC.DEF.GHI-JK.
         1 - Os primeiros oito dígitos,
         ABCDEFGH, formam o número-base definido pela Receita Federal no momento da inscrição.
-        2 - O nono dígito, I, define a Região Fiscal responsável pela inscrição.
-        3 - O penúltimo, J, é o dígito verificador dos nove primeiros.
-        4 - O último, K, é o dígito verificador dos noves anteriores a ele.
-        5 - Os nove primeiros algarismos são ordenadamente multiplicados pela sequência 10, 9, 8, 7, 6, 5, 4, 3, 2
+        2 — O nono dígito, I, define a Região Fiscal responsável pela inscrição.
+        3 — O penúltimo, J, é o dígito verificador dos nove primeiros.
+        4 — O último, K, é o dígito verificador dos noves anteriores a ele.
+        5 — Os nove primeiros algarismos são ordenadamente multiplicados pela sequência 10, 9, 8, 7, 6, 5, 4, 3, 2
         (o primeiro por 10, o segundo por 9, e assim sucessivamente). Em seguida, calcula-se o resto r da divisão da
-        soma dos resultados das multiplicações por  11:
+        soma dos resultados das multiplicações por 11:
             * se esse resto for 0 ou 1, o primeiro dígito verificador é zero (d1=0); caso contrário, d1=11−r.
-        6 -  O segundo Dígito Verificador (d2) é calculado pela mesma regra, na qual os números a serem multiplicados
+        6 — O segundo Dígito Verificador (d2) é calculado pela mesma regra, onde os números a serem multiplicados
         pela sequência 10, 9, 8, 7, 6, 5, 4, 3, 2 são contados a partir do segundo algarismo, sendo d1 o último
         algarismo. Se s é o resto da divisão por 11 das somas das multiplicações, então:
             * d2 é zero, se s for 0 ou 1; caso contrário, d2=11−s. */
